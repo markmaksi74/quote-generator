@@ -54,7 +54,7 @@ async function populateQuote() {
     quoteAuthor.textContent = 'Unknown';
   }
   quoteAuthor.textContent = quote.author;
-  if (quoteText > 120) {
+  if (quoteText.length > 100) {
     quoteText.classList.add('long-quote');
   }
   quoteText.classList.remove('long-quote');
