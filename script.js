@@ -65,7 +65,7 @@ async function populateQuote() {
 
 // Twitter button
 async function tweetQuote() {
-  const twitterURL = `https:twitter.com/intent/tweet?text="${QUOTE_POPULATED.text}" ~${QUOTE_POPULATED.author}`;
+  const twitterURL = `https://www.twitter.com/intent/tweet?text="${QUOTE_POPULATED.text}" ~${QUOTE_POPULATED.author}`;
   window.open(twitterURL, '_blank');
   return true;
 }
