@@ -1,3 +1,8 @@
+let QUOTE_POPULATED = {
+  text: "Knowledge is power, and if your knowledge doesn't arm you with power, you acquire false knowledge.",
+  author: 'Mark Maksi',
+};
+
 // Show loader
 function loading() {
   const loader = document.getElementById('loader');
@@ -31,6 +36,7 @@ async function getAllQuotes() {
 async function pickNewQuote() {
   const quotesArray = await getAllQuotes();
   const quote = quotesArray[Math.floor(Math.random() * quotesArray.length)];
+  QUOTE_POPULATED = quote;
   return quote;
 }
 
@@ -48,7 +54,7 @@ async function populateQuote() {
     quoteAuthor.textContent = 'Unknown';
   }
   quoteAuthor.textContent = quote.author;
-  if (quoteText.length > 120) {
+  if (quoteText > 120) {
     quoteText.classList.add('long-quote');
   }
   quoteText.classList.remove('long-quote');
@@ -59,8 +65,7 @@ async function populateQuote() {
 
 // Twitter button
 async function tweetQuote() {
-  const quote = await populateQuote();
-  const twitterURL = `https:twitter.com/intent/tweet?text=${quote.text} ~${quote.author}`;
+  const twitterURL = `https:twitter.com/intent/tweet?text="${QUOTE_POPULATED.text}" ~${QUOTE_POPULATED.author}`;
   window.open(twitterURL, '_blank');
   return true;
 }
