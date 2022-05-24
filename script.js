@@ -1,3 +1,5 @@
+// window.open(url, '_blank')
+
 let QUOTE_POPULATED = {
   text: "Knowledge is power, and if your knowledge doesn't arm you with power, you acquire false knowledge.",
   author: 'Mark Maksi',
@@ -21,10 +23,13 @@ function completeLoading() {
 
 // Get quotes from API
 async function getAllQuotes() {
+  const PROXY_URL = 'https://cors-anywhere.herokuapp.com/'
+  const API_URL2 = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en?format=json'
   const API_URL = 'https://type.fit/api/quotes';
   try {
     const response = await fetch(API_URL);
-    const quotesArray = response.json();
+    const quotesArray = await response.json();
+    console.log(quotesArray)
     return quotesArray;
   } catch (error) {
     console.log(error);
