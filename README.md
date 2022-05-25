@@ -1,5 +1,5 @@
 ## Demo ⚡
-Visit the [demo here](https://markmaksi74.github.io/quote-generator/)
+[https://markmaksi74.github.io/quote-generator/](https://markmaksi74.github.io/quote-generator/)
 
 ## Features 🥁
 - Random Quotes [API](https://type.fit/api/quotes)
