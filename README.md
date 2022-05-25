@@ -1,12 +1,14 @@
 # This simple web app allows you to generate a random quote from an API and gives you the capability to tweet your favourite quote with your friends! Enjoy.
 
+# This simple web app allows you to generate a random quote from an API and gives you the capability to tweet your favourite quote with your friends! Enjoy.
+
 ## Demo ⚡
-[https://markmaksi74.github.io/quote-generator/index.html](url) 
+[https://markmaksi74.github.io/quote-generator/](url)
 
 ## Features 🥁
-- Random Quotes API [https://type.fit/api/quotes](url)
-- Loader for initial load created by w3schools: [https://www.w3schools.com/howto/howto_css_loader.asp](url)
-- Choose vector background [https://heropatterns.com/](url) 
+- Random Quotes [API](https://type.fit/api/quotes)
+- [Loader](https://www.w3schools.com/howto/howto_css_loader.asp) for initial load created by w3schools
+- Choose [vector background](https://heropatterns.com/)
 
 ## Techniques 🛠
 - API `fetch()` and `async await` function
