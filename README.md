@@ -1,7 +1,7 @@
 # This simple web app allows you to generate a random quote from an API and gives you the capability to tweet your favourite quote with your friends! Enjoy.
 
 ## Demo ⚡
-[https://markmaksi74.github.io/quote-generator/](url)
+[https://markmaksi74.github.io/quote-generator/](url) 
 
 ## Features 🥁
 - Random Quotes API [https://type.fit/api/quotes](url)
