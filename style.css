@@ -1,18 +1,8 @@
-/* heropatterns.com to choose vector background */
-
-/* The min-height property is used to set the minimum height of a specified element.
-   It always overrides both height and max-height. */
-
-/* block elements: body, div, p, header, section, main, form, li, ol, ul, nav */
-
-/* we use rem for responsive design because the user might change the font size of html element */
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
   box-sizing: border-box;
 }
-
    
 body {
   margin: 0;
@@ -34,7 +24,7 @@ body {
   padding: 20px 30px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.2); /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .quote-text {
@@ -84,7 +74,6 @@ button:hover {
   filter: brightness(120%);
 }
 
-/* when clicking on the button */
 button:active {
   transform: translate(0, 0.3rem);
   box-shadow: rgba(255, 255, 255, 0.65);
@@ -92,7 +81,6 @@ button:active {
   outline: none;
 }
 
-/* the element is currently targeted by the keyboard, or activated by the mouse */
 button:focus {
   border: none;
   outline: none;
