@@ -10,6 +10,7 @@
 - API `fetch()` and `async await` function
 
 ## Lessons Learned 📚
+### CSS
 - `:focus` controls when the element is currently targeted by the keyboard (tab), or activated by the mouse
 
 - `:active` while clicking on the button
