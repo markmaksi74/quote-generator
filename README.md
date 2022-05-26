@@ -30,3 +30,10 @@
 - We use `rem` for responsive design because the user might change the font size of html element
 
 - Target Tablet screens or smaller: `@media screen and (max-width: 1000px) {}`
+
+- Create an interactive button:
+```
+button:hover {
+  filter: brightness(110%);
+}
+```
